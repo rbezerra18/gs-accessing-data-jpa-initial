@@ -26,6 +26,7 @@ public class Application {
 			repository.save(new Customer("Kim", "Bauer"));
 			repository.save(new Customer("David", "Palmer"));
 			repository.save(new Customer("Michelle", "Dessler"));
+			repository.save(new Customer("Roberto", "Oliveira"));
 
 			// fetch all customers
 			log.info("Customers found with findAll():");
@@ -43,7 +44,7 @@ public class Application {
             log.info("");
 
 			// fetch customers by last name
-			log.info("Customer found with findByLastName('Bauer'):");
+			log.info("Customer found with findByLastName('Oliveira'):");
 			log.info("--------------------------------------------");
 			for (Customer bauer : repository.findByLastName("Bauer")) {
 				log.info(bauer.toString());
