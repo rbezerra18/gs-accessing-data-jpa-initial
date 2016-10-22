@@ -46,7 +46,7 @@ public class Application {
 			// fetch customers by last name
 			log.info("Customer found with findByLastName('Oliveira'):");
 			log.info("--------------------------------------------");
-			for (Customer bauer : repository.findByLastName("Bauer")) {
+			for (Customer bauer : repository.findByLastName("Oliveira")) {
 				log.info(bauer.toString());
 			}
             log.info("");
